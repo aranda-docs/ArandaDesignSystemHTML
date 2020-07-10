@@ -1,0 +1,17 @@
+{
+  "name": "practicetailwind",
+  "version": "1.0.0",
+  "description": "para practicar con tailwind",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1"
+  }
+}
