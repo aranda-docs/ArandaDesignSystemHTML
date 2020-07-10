@@ -1,7 +1,7 @@
 {
-  "name": "practicetailwind",
+  "name": "Aranda Design system",
   "version": "1.0.0",
-  "description": "para practicar con tailwind",
+  "description": "Propuesta para Aranda Design system",
   "main": "index.js",
   "scripts": {
     "build:css": "tailwind build src/style.css -o dist/style.css"
