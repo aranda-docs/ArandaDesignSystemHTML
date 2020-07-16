@@ -1920,6 +1920,24 @@ video {
   border-color: rgba(227, 52, 47, var(--divide-opacity));
 }
 
+.divide-statusEnrolled > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #9CC13B;
+  border-color: rgba(156, 193, 59, var(--divide-opacity));
+}
+
+.divide-statusPending > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #F4AE1C;
+  border-color: rgba(244, 174, 28, var(--divide-opacity));
+}
+
+.divide-statusUnenrolled > :not(template) ~ :not(template) {
+  --divide-opacity: 1;
+  border-color: #AFAEB4;
+  border-color: rgba(175, 174, 180, var(--divide-opacity));
+}
+
 .divide-opacity-0 > :not(template) ~ :not(template) {
   --divide-opacity: 0;
 }
@@ -2630,6 +2648,102 @@ video {
   background-color: rgba(225, 226, 226, var(--bg-opacity));
 }
 
+.bg-nobel {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.bg-salmon {
+  --bg-opacity: 1;
+  background-color: #F5846F;
+  background-color: rgba(245, 132, 111, var(--bg-opacity));
+}
+
+.bg-statusEnrolled {
+  --bg-opacity: 1;
+  background-color: #9CC13B;
+  background-color: rgba(156, 193, 59, var(--bg-opacity));
+}
+
+.bg-statusPending {
+  --bg-opacity: 1;
+  background-color: #F4AE1C;
+  background-color: rgba(244, 174, 28, var(--bg-opacity));
+}
+
+.bg-statusUnenrolled {
+  --bg-opacity: 1;
+  background-color: #AFAEB4;
+  background-color: rgba(175, 174, 180, var(--bg-opacity));
+}
+
+.bg-statusScheduled {
+  --bg-opacity: 1;
+  background-color: #ffa300;
+  background-color: rgba(255, 163, 0, var(--bg-opacity));
+}
+
+.bg-statusRunning {
+  --bg-opacity: 1;
+  background-color: #FFCC00;
+  background-color: rgba(255, 204, 0, var(--bg-opacity));
+}
+
+.bg-statusCompleted {
+  --bg-opacity: 1;
+  background-color: #a2bc03;
+  background-color: rgba(162, 188, 3, var(--bg-opacity));
+}
+
+.bg-statusCanceled {
+  --bg-opacity: 1;
+  background-color: #A8A8A8;
+  background-color: rgba(168, 168, 168, var(--bg-opacity));
+}
+
+.bg-statusShared {
+  --bg-opacity: 1;
+  background-color: #a1bc00;
+  background-color: rgba(161, 188, 0, var(--bg-opacity));
+}
+
+.bg-statusNoShared {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.bg-severityCritical {
+  --bg-opacity: 1;
+  background-color: #A0000F;
+  background-color: rgba(160, 0, 15, var(--bg-opacity));
+}
+
+.bg-severityhigh {
+  --bg-opacity: 1;
+  background-color: #f00;
+  background-color: rgba(255, 0, 0, var(--bg-opacity));
+}
+
+.bg-severitymedium {
+  --bg-opacity: 1;
+  background-color: #FDBA42;
+  background-color: rgba(253, 186, 66, var(--bg-opacity));
+}
+
+.bg-severitylow {
+  --bg-opacity: 1;
+  background-color: #FFF42D;
+  background-color: rgba(255, 244, 45, var(--bg-opacity));
+}
+
+.bg-pattensBlue {
+  --bg-opacity: 1;
+  background-color: #D0D6D9;
+  background-color: rgba(208, 214, 217, var(--bg-opacity));
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -3254,6 +3368,102 @@ video {
   --bg-opacity: 1;
   background-color: #e1e2e2;
   background-color: rgba(225, 226, 226, var(--bg-opacity));
+}
+
+.hover\:bg-nobel:hover {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.hover\:bg-salmon:hover {
+  --bg-opacity: 1;
+  background-color: #F5846F;
+  background-color: rgba(245, 132, 111, var(--bg-opacity));
+}
+
+.hover\:bg-statusEnrolled:hover {
+  --bg-opacity: 1;
+  background-color: #9CC13B;
+  background-color: rgba(156, 193, 59, var(--bg-opacity));
+}
+
+.hover\:bg-statusPending:hover {
+  --bg-opacity: 1;
+  background-color: #F4AE1C;
+  background-color: rgba(244, 174, 28, var(--bg-opacity));
+}
+
+.hover\:bg-statusUnenrolled:hover {
+  --bg-opacity: 1;
+  background-color: #AFAEB4;
+  background-color: rgba(175, 174, 180, var(--bg-opacity));
+}
+
+.hover\:bg-statusScheduled:hover {
+  --bg-opacity: 1;
+  background-color: #ffa300;
+  background-color: rgba(255, 163, 0, var(--bg-opacity));
+}
+
+.hover\:bg-statusRunning:hover {
+  --bg-opacity: 1;
+  background-color: #FFCC00;
+  background-color: rgba(255, 204, 0, var(--bg-opacity));
+}
+
+.hover\:bg-statusCompleted:hover {
+  --bg-opacity: 1;
+  background-color: #a2bc03;
+  background-color: rgba(162, 188, 3, var(--bg-opacity));
+}
+
+.hover\:bg-statusCanceled:hover {
+  --bg-opacity: 1;
+  background-color: #A8A8A8;
+  background-color: rgba(168, 168, 168, var(--bg-opacity));
+}
+
+.hover\:bg-statusShared:hover {
+  --bg-opacity: 1;
+  background-color: #a1bc00;
+  background-color: rgba(161, 188, 0, var(--bg-opacity));
+}
+
+.hover\:bg-statusNoShared:hover {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.hover\:bg-severityCritical:hover {
+  --bg-opacity: 1;
+  background-color: #A0000F;
+  background-color: rgba(160, 0, 15, var(--bg-opacity));
+}
+
+.hover\:bg-severityhigh:hover {
+  --bg-opacity: 1;
+  background-color: #f00;
+  background-color: rgba(255, 0, 0, var(--bg-opacity));
+}
+
+.hover\:bg-severitymedium:hover {
+  --bg-opacity: 1;
+  background-color: #FDBA42;
+  background-color: rgba(253, 186, 66, var(--bg-opacity));
+}
+
+.hover\:bg-severitylow:hover {
+  --bg-opacity: 1;
+  background-color: #FFF42D;
+  background-color: rgba(255, 244, 45, var(--bg-opacity));
+}
+
+.hover\:bg-pattensBlue:hover {
+  --bg-opacity: 1;
+  background-color: #D0D6D9;
+  background-color: rgba(208, 214, 217, var(--bg-opacity));
 }
 
 .focus\:bg-transparent:focus {
@@ -3882,6 +4092,102 @@ video {
   background-color: rgba(225, 226, 226, var(--bg-opacity));
 }
 
+.focus\:bg-nobel:focus {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.focus\:bg-salmon:focus {
+  --bg-opacity: 1;
+  background-color: #F5846F;
+  background-color: rgba(245, 132, 111, var(--bg-opacity));
+}
+
+.focus\:bg-statusEnrolled:focus {
+  --bg-opacity: 1;
+  background-color: #9CC13B;
+  background-color: rgba(156, 193, 59, var(--bg-opacity));
+}
+
+.focus\:bg-statusPending:focus {
+  --bg-opacity: 1;
+  background-color: #F4AE1C;
+  background-color: rgba(244, 174, 28, var(--bg-opacity));
+}
+
+.focus\:bg-statusUnenrolled:focus {
+  --bg-opacity: 1;
+  background-color: #AFAEB4;
+  background-color: rgba(175, 174, 180, var(--bg-opacity));
+}
+
+.focus\:bg-statusScheduled:focus {
+  --bg-opacity: 1;
+  background-color: #ffa300;
+  background-color: rgba(255, 163, 0, var(--bg-opacity));
+}
+
+.focus\:bg-statusRunning:focus {
+  --bg-opacity: 1;
+  background-color: #FFCC00;
+  background-color: rgba(255, 204, 0, var(--bg-opacity));
+}
+
+.focus\:bg-statusCompleted:focus {
+  --bg-opacity: 1;
+  background-color: #a2bc03;
+  background-color: rgba(162, 188, 3, var(--bg-opacity));
+}
+
+.focus\:bg-statusCanceled:focus {
+  --bg-opacity: 1;
+  background-color: #A8A8A8;
+  background-color: rgba(168, 168, 168, var(--bg-opacity));
+}
+
+.focus\:bg-statusShared:focus {
+  --bg-opacity: 1;
+  background-color: #a1bc00;
+  background-color: rgba(161, 188, 0, var(--bg-opacity));
+}
+
+.focus\:bg-statusNoShared:focus {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.focus\:bg-severityCritical:focus {
+  --bg-opacity: 1;
+  background-color: #A0000F;
+  background-color: rgba(160, 0, 15, var(--bg-opacity));
+}
+
+.focus\:bg-severityhigh:focus {
+  --bg-opacity: 1;
+  background-color: #f00;
+  background-color: rgba(255, 0, 0, var(--bg-opacity));
+}
+
+.focus\:bg-severitymedium:focus {
+  --bg-opacity: 1;
+  background-color: #FDBA42;
+  background-color: rgba(253, 186, 66, var(--bg-opacity));
+}
+
+.focus\:bg-severitylow:focus {
+  --bg-opacity: 1;
+  background-color: #FFF42D;
+  background-color: rgba(255, 244, 45, var(--bg-opacity));
+}
+
+.focus\:bg-pattensBlue:focus {
+  --bg-opacity: 1;
+  background-color: #D0D6D9;
+  background-color: rgba(208, 214, 217, var(--bg-opacity));
+}
+
 .disabled\:bg-transparent:disabled {
   background-color: transparent;
 }
@@ -4506,6 +4812,102 @@ video {
   --bg-opacity: 1;
   background-color: #e1e2e2;
   background-color: rgba(225, 226, 226, var(--bg-opacity));
+}
+
+.disabled\:bg-nobel:disabled {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.disabled\:bg-salmon:disabled {
+  --bg-opacity: 1;
+  background-color: #F5846F;
+  background-color: rgba(245, 132, 111, var(--bg-opacity));
+}
+
+.disabled\:bg-statusEnrolled:disabled {
+  --bg-opacity: 1;
+  background-color: #9CC13B;
+  background-color: rgba(156, 193, 59, var(--bg-opacity));
+}
+
+.disabled\:bg-statusPending:disabled {
+  --bg-opacity: 1;
+  background-color: #F4AE1C;
+  background-color: rgba(244, 174, 28, var(--bg-opacity));
+}
+
+.disabled\:bg-statusUnenrolled:disabled {
+  --bg-opacity: 1;
+  background-color: #AFAEB4;
+  background-color: rgba(175, 174, 180, var(--bg-opacity));
+}
+
+.disabled\:bg-statusScheduled:disabled {
+  --bg-opacity: 1;
+  background-color: #ffa300;
+  background-color: rgba(255, 163, 0, var(--bg-opacity));
+}
+
+.disabled\:bg-statusRunning:disabled {
+  --bg-opacity: 1;
+  background-color: #FFCC00;
+  background-color: rgba(255, 204, 0, var(--bg-opacity));
+}
+
+.disabled\:bg-statusCompleted:disabled {
+  --bg-opacity: 1;
+  background-color: #a2bc03;
+  background-color: rgba(162, 188, 3, var(--bg-opacity));
+}
+
+.disabled\:bg-statusCanceled:disabled {
+  --bg-opacity: 1;
+  background-color: #A8A8A8;
+  background-color: rgba(168, 168, 168, var(--bg-opacity));
+}
+
+.disabled\:bg-statusShared:disabled {
+  --bg-opacity: 1;
+  background-color: #a1bc00;
+  background-color: rgba(161, 188, 0, var(--bg-opacity));
+}
+
+.disabled\:bg-statusNoShared:disabled {
+  --bg-opacity: 1;
+  background-color: #999999;
+  background-color: rgba(153, 153, 153, var(--bg-opacity));
+}
+
+.disabled\:bg-severityCritical:disabled {
+  --bg-opacity: 1;
+  background-color: #A0000F;
+  background-color: rgba(160, 0, 15, var(--bg-opacity));
+}
+
+.disabled\:bg-severityhigh:disabled {
+  --bg-opacity: 1;
+  background-color: #f00;
+  background-color: rgba(255, 0, 0, var(--bg-opacity));
+}
+
+.disabled\:bg-severitymedium:disabled {
+  --bg-opacity: 1;
+  background-color: #FDBA42;
+  background-color: rgba(253, 186, 66, var(--bg-opacity));
+}
+
+.disabled\:bg-severitylow:disabled {
+  --bg-opacity: 1;
+  background-color: #FFF42D;
+  background-color: rgba(255, 244, 45, var(--bg-opacity));
+}
+
+.disabled\:bg-pattensBlue:disabled {
+  --bg-opacity: 1;
+  background-color: #D0D6D9;
+  background-color: rgba(208, 214, 217, var(--bg-opacity));
 }
 
 .bg-opacity-0 {
@@ -5178,6 +5580,24 @@ video {
   border-color: rgba(227, 52, 47, var(--border-opacity));
 }
 
+.border-statusEnrolled {
+  --border-opacity: 1;
+  border-color: #9CC13B;
+  border-color: rgba(156, 193, 59, var(--border-opacity));
+}
+
+.border-statusPending {
+  --border-opacity: 1;
+  border-color: #F4AE1C;
+  border-color: rgba(244, 174, 28, var(--border-opacity));
+}
+
+.border-statusUnenrolled {
+  --border-opacity: 1;
+  border-color: #AFAEB4;
+  border-color: rgba(175, 174, 180, var(--border-opacity));
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -5708,6 +6128,24 @@ video {
   border-color: rgba(227, 52, 47, var(--border-opacity));
 }
 
+.hover\:border-statusEnrolled:hover {
+  --border-opacity: 1;
+  border-color: #9CC13B;
+  border-color: rgba(156, 193, 59, var(--border-opacity));
+}
+
+.hover\:border-statusPending:hover {
+  --border-opacity: 1;
+  border-color: #F4AE1C;
+  border-color: rgba(244, 174, 28, var(--border-opacity));
+}
+
+.hover\:border-statusUnenrolled:hover {
+  --border-opacity: 1;
+  border-color: #AFAEB4;
+  border-color: rgba(175, 174, 180, var(--border-opacity));
+}
+
 .focus\:border-transparent:focus {
   border-color: transparent;
 }
@@ -6236,6 +6674,24 @@ video {
   --border-opacity: 1;
   border-color: #e3342f;
   border-color: rgba(227, 52, 47, var(--border-opacity));
+}
+
+.focus\:border-statusEnrolled:focus {
+  --border-opacity: 1;
+  border-color: #9CC13B;
+  border-color: rgba(156, 193, 59, var(--border-opacity));
+}
+
+.focus\:border-statusPending:focus {
+  --border-opacity: 1;
+  border-color: #F4AE1C;
+  border-color: rgba(244, 174, 28, var(--border-opacity));
+}
+
+.focus\:border-statusUnenrolled:focus {
+  --border-opacity: 1;
+  border-color: #AFAEB4;
+  border-color: rgba(175, 174, 180, var(--border-opacity));
 }
 
 .border-opacity-0 {
@@ -7222,6 +7678,11 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.text-fs10 {
+  font-size: 10px;
+  line-height: 15px;
 }
 
 .text-sm {
@@ -15449,6 +15910,14 @@ label .icon{
   font-size: 14px;
 }
 
+/***Para las etiquetas con fuente 12****/
+
+.lh-tag-sm{
+  line-height: 20px;
+}
+
+/***Para las etiquetas con fuente 12****/
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -16500,6 +16969,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--divide-opacity));
   }
 
+  .sm\:divide-statusEnrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--divide-opacity));
+  }
+
+  .sm\:divide-statusPending > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--divide-opacity));
+  }
+
+  .sm\:divide-statusUnenrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--divide-opacity));
+  }
+
   .sm\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -17210,6 +17697,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .sm\:bg-nobel {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:bg-salmon {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusEnrolled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusPending {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusUnenrolled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusScheduled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusRunning {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusCompleted {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusCanceled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusShared {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .sm\:bg-statusNoShared {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:bg-severityCritical {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .sm\:bg-severityhigh {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .sm\:bg-severitymedium {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .sm\:bg-severitylow {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .sm\:bg-pattensBlue {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -17834,6 +18417,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-nobel:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-salmon:hover {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusEnrolled:hover {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusPending:hover {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusUnenrolled:hover {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusScheduled:hover {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusRunning:hover {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusCompleted:hover {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusCanceled:hover {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusShared:hover {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-statusNoShared:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-severityCritical:hover {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-severityhigh:hover {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-severitymedium:hover {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-severitylow:hover {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .sm\:hover\:bg-pattensBlue:hover {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -18462,6 +19141,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .sm\:focus\:bg-nobel:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-salmon:focus {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusEnrolled:focus {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusPending:focus {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusUnenrolled:focus {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusScheduled:focus {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusRunning:focus {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusCompleted:focus {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusCanceled:focus {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusShared:focus {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-statusNoShared:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-severityCritical:focus {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-severityhigh:focus {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-severitymedium:focus {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-severitylow:focus {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .sm\:focus\:bg-pattensBlue:focus {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .sm\:disabled\:bg-transparent:disabled {
     background-color: transparent;
   }
@@ -19086,6 +19861,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-nobel:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-salmon:disabled {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusEnrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusPending:disabled {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusUnenrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusScheduled:disabled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusRunning:disabled {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusCompleted:disabled {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusCanceled:disabled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusShared:disabled {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-statusNoShared:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-severityCritical:disabled {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-severityhigh:disabled {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-severitymedium:disabled {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-severitylow:disabled {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .sm\:disabled\:bg-pattensBlue:disabled {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .sm\:bg-opacity-0 {
@@ -19758,6 +20629,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .sm\:border-statusEnrolled {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .sm\:border-statusPending {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .sm\:border-statusUnenrolled {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -20288,6 +21177,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .sm\:hover\:border-statusEnrolled:hover {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .sm\:hover\:border-statusPending:hover {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .sm\:hover\:border-statusUnenrolled:hover {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .sm\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -20816,6 +21723,24 @@ label .icon{
     --border-opacity: 1;
     border-color: #e3342f;
     border-color: rgba(227, 52, 47, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-statusEnrolled:focus {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-statusPending:focus {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .sm\:focus\:border-statusUnenrolled:focus {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
   }
 
   .sm\:border-opacity-0 {
@@ -21802,6 +22727,11 @@ label .icon{
 
   .sm\:h-screen {
     height: 100vh;
+  }
+
+  .sm\:text-fs10 {
+    font-size: 10px;
+    line-height: 15px;
   }
 
   .sm\:text-sm {
@@ -31022,6 +31952,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--divide-opacity));
   }
 
+  .md\:divide-statusEnrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--divide-opacity));
+  }
+
+  .md\:divide-statusPending > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--divide-opacity));
+  }
+
+  .md\:divide-statusUnenrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--divide-opacity));
+  }
+
   .md\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -31732,6 +32680,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .md\:bg-nobel {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:bg-salmon {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .md\:bg-statusEnrolled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .md\:bg-statusPending {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .md\:bg-statusUnenrolled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .md\:bg-statusScheduled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .md\:bg-statusRunning {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .md\:bg-statusCompleted {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .md\:bg-statusCanceled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .md\:bg-statusShared {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .md\:bg-statusNoShared {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:bg-severityCritical {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .md\:bg-severityhigh {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .md\:bg-severitymedium {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .md\:bg-severitylow {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .md\:bg-pattensBlue {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -32356,6 +33400,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-nobel:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-salmon:hover {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusEnrolled:hover {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusPending:hover {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusUnenrolled:hover {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusScheduled:hover {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusRunning:hover {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusCompleted:hover {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusCanceled:hover {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusShared:hover {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-statusNoShared:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-severityCritical:hover {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-severityhigh:hover {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-severitymedium:hover {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-severitylow:hover {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .md\:hover\:bg-pattensBlue:hover {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -32984,6 +34124,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .md\:focus\:bg-nobel:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-salmon:focus {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusEnrolled:focus {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusPending:focus {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusUnenrolled:focus {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusScheduled:focus {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusRunning:focus {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusCompleted:focus {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusCanceled:focus {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusShared:focus {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-statusNoShared:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-severityCritical:focus {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-severityhigh:focus {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-severitymedium:focus {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-severitylow:focus {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .md\:focus\:bg-pattensBlue:focus {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .md\:disabled\:bg-transparent:disabled {
     background-color: transparent;
   }
@@ -33608,6 +34844,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-nobel:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-salmon:disabled {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusEnrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusPending:disabled {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusUnenrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusScheduled:disabled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusRunning:disabled {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusCompleted:disabled {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusCanceled:disabled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusShared:disabled {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-statusNoShared:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-severityCritical:disabled {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-severityhigh:disabled {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-severitymedium:disabled {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-severitylow:disabled {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .md\:disabled\:bg-pattensBlue:disabled {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .md\:bg-opacity-0 {
@@ -34280,6 +35612,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .md\:border-statusEnrolled {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .md\:border-statusPending {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .md\:border-statusUnenrolled {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -34810,6 +36160,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .md\:hover\:border-statusEnrolled:hover {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .md\:hover\:border-statusPending:hover {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .md\:hover\:border-statusUnenrolled:hover {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .md\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -35338,6 +36706,24 @@ label .icon{
     --border-opacity: 1;
     border-color: #e3342f;
     border-color: rgba(227, 52, 47, var(--border-opacity));
+  }
+
+  .md\:focus\:border-statusEnrolled:focus {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .md\:focus\:border-statusPending:focus {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .md\:focus\:border-statusUnenrolled:focus {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
   }
 
   .md\:border-opacity-0 {
@@ -36324,6 +37710,11 @@ label .icon{
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:text-fs10 {
+    font-size: 10px;
+    line-height: 15px;
   }
 
   .md\:text-sm {
@@ -45544,6 +46935,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--divide-opacity));
   }
 
+  .lg\:divide-statusEnrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--divide-opacity));
+  }
+
+  .lg\:divide-statusPending > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--divide-opacity));
+  }
+
+  .lg\:divide-statusUnenrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--divide-opacity));
+  }
+
   .lg\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -46254,6 +47663,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .lg\:bg-nobel {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:bg-salmon {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusEnrolled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusPending {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusUnenrolled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusScheduled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusRunning {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusCompleted {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusCanceled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusShared {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .lg\:bg-statusNoShared {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:bg-severityCritical {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .lg\:bg-severityhigh {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .lg\:bg-severitymedium {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .lg\:bg-severitylow {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .lg\:bg-pattensBlue {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -46878,6 +48383,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-nobel:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-salmon:hover {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusEnrolled:hover {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusPending:hover {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusUnenrolled:hover {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusScheduled:hover {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusRunning:hover {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusCompleted:hover {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusCanceled:hover {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusShared:hover {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-statusNoShared:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-severityCritical:hover {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-severityhigh:hover {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-severitymedium:hover {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-severitylow:hover {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .lg\:hover\:bg-pattensBlue:hover {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -47506,6 +49107,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .lg\:focus\:bg-nobel:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-salmon:focus {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusEnrolled:focus {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusPending:focus {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusUnenrolled:focus {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusScheduled:focus {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusRunning:focus {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusCompleted:focus {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusCanceled:focus {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusShared:focus {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-statusNoShared:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-severityCritical:focus {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-severityhigh:focus {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-severitymedium:focus {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-severitylow:focus {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .lg\:focus\:bg-pattensBlue:focus {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .lg\:disabled\:bg-transparent:disabled {
     background-color: transparent;
   }
@@ -48130,6 +49827,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-nobel:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-salmon:disabled {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusEnrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusPending:disabled {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusUnenrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusScheduled:disabled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusRunning:disabled {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusCompleted:disabled {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusCanceled:disabled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusShared:disabled {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-statusNoShared:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-severityCritical:disabled {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-severityhigh:disabled {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-severitymedium:disabled {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-severitylow:disabled {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .lg\:disabled\:bg-pattensBlue:disabled {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .lg\:bg-opacity-0 {
@@ -48802,6 +50595,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .lg\:border-statusEnrolled {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .lg\:border-statusPending {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .lg\:border-statusUnenrolled {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -49332,6 +51143,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .lg\:hover\:border-statusEnrolled:hover {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .lg\:hover\:border-statusPending:hover {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .lg\:hover\:border-statusUnenrolled:hover {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .lg\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -49860,6 +51689,24 @@ label .icon{
     --border-opacity: 1;
     border-color: #e3342f;
     border-color: rgba(227, 52, 47, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-statusEnrolled:focus {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-statusPending:focus {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .lg\:focus\:border-statusUnenrolled:focus {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
   }
 
   .lg\:border-opacity-0 {
@@ -50846,6 +52693,11 @@ label .icon{
 
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:text-fs10 {
+    font-size: 10px;
+    line-height: 15px;
   }
 
   .lg\:text-sm {
@@ -60066,6 +61918,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--divide-opacity));
   }
 
+  .xl\:divide-statusEnrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--divide-opacity));
+  }
+
+  .xl\:divide-statusPending > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--divide-opacity));
+  }
+
+  .xl\:divide-statusUnenrolled > :not(template) ~ :not(template) {
+    --divide-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--divide-opacity));
+  }
+
   .xl\:divide-opacity-0 > :not(template) ~ :not(template) {
     --divide-opacity: 0;
   }
@@ -60776,6 +62646,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .xl\:bg-nobel {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:bg-salmon {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusEnrolled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusPending {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusUnenrolled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusScheduled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusRunning {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusCompleted {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusCanceled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusShared {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .xl\:bg-statusNoShared {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:bg-severityCritical {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .xl\:bg-severityhigh {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .xl\:bg-severitymedium {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .xl\:bg-severitylow {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .xl\:bg-pattensBlue {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -61400,6 +63366,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-nobel:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-salmon:hover {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusEnrolled:hover {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusPending:hover {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusUnenrolled:hover {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusScheduled:hover {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusRunning:hover {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusCompleted:hover {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusCanceled:hover {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusShared:hover {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-statusNoShared:hover {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-severityCritical:hover {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-severityhigh:hover {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-severitymedium:hover {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-severitylow:hover {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .xl\:hover\:bg-pattensBlue:hover {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -62028,6 +64090,102 @@ label .icon{
     background-color: rgba(225, 226, 226, var(--bg-opacity));
   }
 
+  .xl\:focus\:bg-nobel:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-salmon:focus {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusEnrolled:focus {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusPending:focus {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusUnenrolled:focus {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusScheduled:focus {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusRunning:focus {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusCompleted:focus {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusCanceled:focus {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusShared:focus {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-statusNoShared:focus {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-severityCritical:focus {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-severityhigh:focus {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-severitymedium:focus {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-severitylow:focus {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .xl\:focus\:bg-pattensBlue:focus {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
+  }
+
   .xl\:disabled\:bg-transparent:disabled {
     background-color: transparent;
   }
@@ -62652,6 +64810,102 @@ label .icon{
     --bg-opacity: 1;
     background-color: #e1e2e2;
     background-color: rgba(225, 226, 226, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-nobel:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-salmon:disabled {
+    --bg-opacity: 1;
+    background-color: #F5846F;
+    background-color: rgba(245, 132, 111, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusEnrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #9CC13B;
+    background-color: rgba(156, 193, 59, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusPending:disabled {
+    --bg-opacity: 1;
+    background-color: #F4AE1C;
+    background-color: rgba(244, 174, 28, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusUnenrolled:disabled {
+    --bg-opacity: 1;
+    background-color: #AFAEB4;
+    background-color: rgba(175, 174, 180, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusScheduled:disabled {
+    --bg-opacity: 1;
+    background-color: #ffa300;
+    background-color: rgba(255, 163, 0, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusRunning:disabled {
+    --bg-opacity: 1;
+    background-color: #FFCC00;
+    background-color: rgba(255, 204, 0, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusCompleted:disabled {
+    --bg-opacity: 1;
+    background-color: #a2bc03;
+    background-color: rgba(162, 188, 3, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusCanceled:disabled {
+    --bg-opacity: 1;
+    background-color: #A8A8A8;
+    background-color: rgba(168, 168, 168, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusShared:disabled {
+    --bg-opacity: 1;
+    background-color: #a1bc00;
+    background-color: rgba(161, 188, 0, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-statusNoShared:disabled {
+    --bg-opacity: 1;
+    background-color: #999999;
+    background-color: rgba(153, 153, 153, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-severityCritical:disabled {
+    --bg-opacity: 1;
+    background-color: #A0000F;
+    background-color: rgba(160, 0, 15, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-severityhigh:disabled {
+    --bg-opacity: 1;
+    background-color: #f00;
+    background-color: rgba(255, 0, 0, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-severitymedium:disabled {
+    --bg-opacity: 1;
+    background-color: #FDBA42;
+    background-color: rgba(253, 186, 66, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-severitylow:disabled {
+    --bg-opacity: 1;
+    background-color: #FFF42D;
+    background-color: rgba(255, 244, 45, var(--bg-opacity));
+  }
+
+  .xl\:disabled\:bg-pattensBlue:disabled {
+    --bg-opacity: 1;
+    background-color: #D0D6D9;
+    background-color: rgba(208, 214, 217, var(--bg-opacity));
   }
 
   .xl\:bg-opacity-0 {
@@ -63324,6 +65578,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .xl\:border-statusEnrolled {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .xl\:border-statusPending {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .xl\:border-statusUnenrolled {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -63854,6 +66126,24 @@ label .icon{
     border-color: rgba(227, 52, 47, var(--border-opacity));
   }
 
+  .xl\:hover\:border-statusEnrolled:hover {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .xl\:hover\:border-statusPending:hover {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .xl\:hover\:border-statusUnenrolled:hover {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
+  }
+
   .xl\:focus\:border-transparent:focus {
     border-color: transparent;
   }
@@ -64382,6 +66672,24 @@ label .icon{
     --border-opacity: 1;
     border-color: #e3342f;
     border-color: rgba(227, 52, 47, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-statusEnrolled:focus {
+    --border-opacity: 1;
+    border-color: #9CC13B;
+    border-color: rgba(156, 193, 59, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-statusPending:focus {
+    --border-opacity: 1;
+    border-color: #F4AE1C;
+    border-color: rgba(244, 174, 28, var(--border-opacity));
+  }
+
+  .xl\:focus\:border-statusUnenrolled:focus {
+    --border-opacity: 1;
+    border-color: #AFAEB4;
+    border-color: rgba(175, 174, 180, var(--border-opacity));
   }
 
   .xl\:border-opacity-0 {
@@ -65368,6 +67676,11 @@ label .icon{
 
   .xl\:h-screen {
     height: 100vh;
+  }
+
+  .xl\:text-fs10 {
+    font-size: 10px;
+    line-height: 15px;
   }
 
   .xl\:text-sm {

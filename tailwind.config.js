@@ -7,6 +7,7 @@ module.exports = {
     },
 
     fontSize: {
+      fs10: ['10px', '15px'],
       sm: ['12px', '17px'],
       fs13: ['13px', '18px'],
       base: ['16px', '24px'],
@@ -26,7 +27,23 @@ module.exports = {
       'alert-warning': '#f7931d',
       'solitude': '#E9EAEB',
       'palegray': '#EDEDED',
-      'zircon': '#e1e2e2'
+      'zircon': '#e1e2e2',
+      'nobel': '#999999',
+      'salmon': '#F5846F',
+      'statusEnrolled': '#9CC13B',
+      'statusPending': '#F4AE1C',
+      'statusUnenrolled': '#AFAEB4',
+      'statusScheduled': '#ffa300',
+      'statusRunning': '#FFCC00',
+      'statusCompleted': '#a2bc03',
+      'statusCanceled': '#A8A8A8',
+      'statusShared': '#a1bc00',
+      'statusNoShared': '#999999',
+      'severityCritical': '#A0000F',
+      'severityhigh': '#f00',
+      'severitymedium': '#FDBA42',
+      'severitylow': '#FFF42D',
+      'pattensBlue': '#D0D6D9'
     }),
 
     borderColor: theme => ({
@@ -36,6 +53,10 @@ module.exports = {
       'secondary': '#435967',
       'danger': '#e3342f',
       'gray': '#ccc',
+      'statusEnrolled': '#9CC13B',
+      'statusPending': '#F4AE1C',
+      'statusUnenrolled': '#AFAEB4',
+      
     }),
 
     textColor: theme => ({
