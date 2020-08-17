@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "alpinejs": "^2.5.0",
     "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
