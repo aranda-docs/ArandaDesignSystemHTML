@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-content {
+  max-height: 0;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+}
+/* :checked - resize to full height */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+/* Icon formatting - closed */
+.tab input[type="checkbox"] + label .icon::before {
+  /* content: "+"; */
+  font-weight: bold; /*.font-bold*/
+  border-width: 1px; /*.border*/
+  border-radius: 9999px; /*.rounded-full */
+  border-color: #b8c2cc; /*.border-grey*/
+}
+.tab input[type="radio"] + label .icon {
+  transform: rotate(180deg);
+}
+/* Icon formatting - open */
+.tab input[type="checkbox"]:checked + label .icon::before {
+  transform: rotate(315deg);
+  background-color: #6574cd; /*.bg-indigo*/
+  color: #f8fafc; /*.text-grey-lightest*/
+}
+.tab input[type="radio"]:checked + label .icon {
+  transform: rotate(360deg);
+}
+
+.w-accordion {
+  width: 150px;
+}
+
+label .icon {
+  top: 8px;
+  right: 5px;
+  font-size: 14px;
+}
+
+/***Para las etiquetas con fuente 12****/
+.lh-tag-sm {
+  line-height: 20px;
+}
+/***Para las etiquetas con fuente 12****/
