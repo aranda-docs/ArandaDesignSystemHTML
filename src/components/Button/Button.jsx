@@ -25,6 +25,16 @@ const Button = (props) => {
       </button>
     );
   }
+  if (options.text === "red") {
+    return (
+      <button
+        background="red"
+        className={`m-4 text-sm bg-disable text-white rounded-sm p-2`}
+      >
+        {options.text}
+      </button>
+    );
+  }
   if (options.type === "border") {
     return (
       <button

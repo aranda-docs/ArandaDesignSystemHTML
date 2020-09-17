@@ -34,3 +34,7 @@ Disabled.args = {
   disabled: true,
   text: "Disabled Button",
 };
+export const red = Template.bind({});
+red.args = {
+  text: "red",
+};

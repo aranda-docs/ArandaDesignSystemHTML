@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import CodeViewer from "../../components/CodeViewer";
-import Button from "../../components/Button";
-import Documentation from "../../components/Button/Button.md";
+/* import Button from "../../components/Button";
+import Documentation from "../../components/Button/Button.md"; */
 
 const Buttons = (props) => {
   const [codeBlock, setCodeBlock] = useState("");
