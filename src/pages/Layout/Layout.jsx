@@ -14,6 +14,8 @@ import Inputs from "../ComponentPages/Inputs";
 import Textareas from "../ComponentPages/Textareas";
 import Tags from "../ComponentPages/Tags";
 
+import Menu from "../../components/Menu";
+
 const Layout = () => {
   const { hash, sections } = useContext(AnchorContext);
 
@@ -45,6 +47,10 @@ const Layout = () => {
         <AnchorSection className="dBlock anchor" id="tags">
           <Tags />
         </AnchorSection>
+        <AnchorSection className="dBlock anchor" id="menuOwner">
+          <Menu />
+        </AnchorSection>
+
       </div>
     </AnchorProvider>
   );
