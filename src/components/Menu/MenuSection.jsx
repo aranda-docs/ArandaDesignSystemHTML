@@ -29,7 +29,15 @@ const MenuSection = (props) => {
                 {props.title} <span className="icon icon-ic_arrow_long absolute"></span>
             </label>
             <div className="tab-content overflow-hidden bg-gray-100 border-indigo-500 leading-normal">
-                {props.children}
+                <ul>
+                    {
+                        props.items.map((item, index) => (
+                            <li key={'section'+index} className="item h-6 bg-palegray text-sm pt-1 pl-2 pr-2 pb-1 text-secondary hover:bg-zircon hover:text-primary cursor-pointer">
+                                <span>{item.label}</span>
+                            </li>
+                        ))
+                    }
+                </ul>
             </div>
         </div>
 
