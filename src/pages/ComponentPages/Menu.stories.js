@@ -25,7 +25,7 @@ Normal.args = {
             enableHref: true,
             enableCallback: false,
             href:'?path=/story/menu--multiple-open',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Usuarios',
@@ -48,21 +48,21 @@ Normal.args = {
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Actividad de consola',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Licenciamiento',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
 
         ]
@@ -75,42 +75,42 @@ Normal.args = {
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Usuarios',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos dinámicos',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Actividad de consola',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Licenciamiento',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
 
         ]
@@ -123,42 +123,42 @@ Normal.args = {
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Usuarios',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos dinámicos',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Actividad de consola',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Licenciamiento',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
 
         ]
@@ -181,7 +181,7 @@ MultipleOpen.args = {
             enableHref: true,
             enableCallback: false,
             href:'?path=/story/menu--normal',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Usuarios',
@@ -204,21 +204,21 @@ MultipleOpen.args = {
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Actividad de consola',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Licenciamiento',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
 
         ]
@@ -231,42 +231,42 @@ MultipleOpen.args = {
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Usuarios',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos dinámicos',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Actividad de consola',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Licenciamiento',
             enableHref: false,
             enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
 
         ]
@@ -276,33 +276,45 @@ MultipleOpen.args = {
         items:[
           {
             label:'Integración empresarial',
+            enableHref: false,
+            enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Usuarios',
+            enableHref: false,
+            enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Grupos dinámicos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Actividad de consola',
+            enableHref: false,
+            enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
           {
             label:'Licenciamiento',
+            enableHref: false,
+            enableCallback: false,
             href:'',
-            functCallBack: ''
+            functCallBack: null
           },
 
         ]
