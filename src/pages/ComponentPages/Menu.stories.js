@@ -22,31 +22,45 @@ Normal.args = {
         items:[
           {
             label:'Integración empresarial',
-            href:'',
+            enableHref: true,
+            enableCallback: false,
+            href:'?path=/story/menu--multiple-open',
             functCallBack: ''
           },
           {
             label:'Usuarios',
+            enableHref: false,
+            enableCallback: true,
             href:'',
-            functCallBack: ''
+            functCallBack: function(){
+              console.log('Menu usuarios');
+            }
           },
           {
             label:'Grupos',
+            enableHref: false,
+            enableCallback: true,
             href:'',
-            functCallBack: ''
+            functCallBack: ()=>console.log('Menu grupos')
           },
           {
             label:'Grupos dinámicos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Actividad de consola',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Licenciamiento',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
@@ -58,31 +72,43 @@ Normal.args = {
         items:[
           {
             label:'Integración empresarial',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Usuarios',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Grupos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Grupos dinámicos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Actividad de consola',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Licenciamiento',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
@@ -94,31 +120,43 @@ Normal.args = {
         items:[
           {
             label:'Integración empresarial',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Usuarios',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Grupos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Grupos dinámicos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Actividad de consola',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Licenciamiento',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
@@ -140,31 +178,45 @@ MultipleOpen.args = {
         items:[
           {
             label:'Integración empresarial',
-            href:'',
+            enableHref: true,
+            enableCallback: false,
+            href:'?path=/story/menu--normal',
             functCallBack: ''
           },
           {
             label:'Usuarios',
+            enableHref: false,
+            enableCallback: true,
             href:'',
-            functCallBack: ''
+            functCallBack: function(){
+              console.log('Menu usuarios');
+            }
           },
           {
             label:'Grupos',
+            enableHref: false,
+            enableCallback: true,
             href:'',
-            functCallBack: ''
+            functCallBack: ()=>console.log('Menu grupos')
           },
           {
             label:'Grupos dinámicos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Actividad de consola',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Licenciamiento',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
@@ -176,31 +228,43 @@ MultipleOpen.args = {
         items:[
           {
             label:'Integración empresarial',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Usuarios',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Grupos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Grupos dinámicos',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Actividad de consola',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
           {
             label:'Licenciamiento',
+            enableHref: false,
+            enableCallback: false,
             href:'',
             functCallBack: ''
           },
