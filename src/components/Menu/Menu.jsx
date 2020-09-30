@@ -32,6 +32,7 @@ const Menu = (props) => {
 
 Menu.propTypes = {
     allowMultipleOpen: PropTypes.bool,
+    contentMenu: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default Menu;

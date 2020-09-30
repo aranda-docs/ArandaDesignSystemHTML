@@ -56,5 +56,10 @@ const MenuSection = (props) => {
     );
 };
 
+MenuSection.propTypes = {
+    title: PropTypes.string,
+    allowMultipleOpen: PropTypes.bool,
+    items: PropTypes.arrayOf(PropTypes.object)
+};
 
 export default MenuSection;
