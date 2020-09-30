@@ -15,18 +15,6 @@ const MenuSection = (props) => {
         }
     }, [props.allowMultipleOpen]);
 
-    // function callFunctionOrRedirect(itemSection){
-        
-    //     if(itemSection.enableHref){
-    //         window.location.href = itemSection.href;
-    //         return;
-    //     }
-    //     if(itemSection.enableCallback){
-    //         itemSection.functCallBack();
-    //         return;
-    //     }
-
-    // }
     return (
 
         <div className="tab w-full overflow-hidden mt-px bg-primary rounded">
@@ -46,10 +34,6 @@ const MenuSection = (props) => {
                     {
                         props.items.map((item, index) => (
                             <Item key={'section'+index} label={item.label} enableHref={item.enableHref} enableCallback= {item.enableCallback} href= {item.href} functCallBack={item.functCallBack} ></Item>
-
-                            // <li key={'section'+index} className="item h-6 bg-palegray text-sm pt-1 pl-2 pr-2 pb-1 text-secondary hover:bg-zircon hover:text-primary cursor-pointer" onClick={()=>callFunctionOrRedirect(item)}>
-                            //     <span>{item.label}</span>
-                            // </li>
                         ))
                     }
                 </ul>
