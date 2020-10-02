@@ -9,6 +9,8 @@ const Menu = (props) => {
         allowMultipleOpen: false
     });
 
+    const nameGroup = props.nameGroup || 'menu';
+
     useEffect(() => {
         if (props) {
             setOptions({
@@ -22,7 +24,7 @@ const Menu = (props) => {
         <div className="w-accordion">
             {
             props.contentMenu.map((child, index) => (
-                 <MenuSection id={'menu' + index} key={'menu' + index} title={child.titleSection} allowMultipleOpen={options.allowMultipleOpen} items= {child.items} />
+                 <MenuSection id={nameGroup + index} key={nameGroup + index} allowMultipleOpen={options.allowMultipleOpen} title={child.titleSection} items= {child.items} nameGroup = {nameGroup}/>
             ))
             }
         </div>

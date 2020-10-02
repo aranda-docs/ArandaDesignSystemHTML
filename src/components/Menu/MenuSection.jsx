@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import Item from "./Item";
+import Menu from "./Menu";
 
 const MenuSection = (props) => {
 
@@ -22,7 +23,7 @@ const MenuSection = (props) => {
                 className="absolute opacity-0"
                 id={'tab-single-menu-' + props.id}
                 type={typeControl}
-                name='tabsMenu'
+                name= {props.nameGroup}
             />
             <label
                 className="block leading-normal cursor-pointer h-10 text-fs13 p-2 text-white relative" htmlFor ={'tab-single-menu-' + props.id}>
@@ -33,7 +34,11 @@ const MenuSection = (props) => {
                 <ul>
                     {
                         props.items.map((item, index) => (
+                            item.isNested?
+                            <Menu allowMultipleOpen={true} contentMenu={item.itemsNested} nameGroup={props.title.replace(/\s/g,'')}></Menu>
+                            :
                             <Item key={'section'+index} label={item.label} enableHref={item.enableHref} enableCallback= {item.enableCallback} href= {item.href} functCallBack={item.functCallBack} ></Item>
+                            
                         ))
                     }
                 </ul>
