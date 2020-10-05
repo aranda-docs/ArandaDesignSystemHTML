@@ -143,6 +143,20 @@ const Bar = () => {
               </button>
             </AnchorLink>
           </li>
+          <li className="my-px">
+            <AnchorLink
+              className="dTable w100 pad15"
+              href="#menuOwner"
+              activeClassName="bg-gray-700"
+            >
+              <button className="flex flex-row items-center h-12 px-4 rounded-lg text-gray-500 hover:bg-gray-700">
+                <span className="flex items-center justify-center text-lg text-white">
+                  <FontAwesomeIcon icon={faLightbulb} />
+                </span>
+                <span className="ml-3 text-white">Menu</span>
+              </button>
+            </AnchorLink>
+          </li>
         </ul>
       </div>
     </div>
