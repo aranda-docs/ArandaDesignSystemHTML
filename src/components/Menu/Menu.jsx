@@ -10,6 +10,7 @@ const Menu = (props) => {
     });
 
     const nameGroup = props.nameGroup || 'menu';
+    const isMenuSecond = props.isMenuSecond || false;
 
     useEffect(() => {
         if (props) {
@@ -21,10 +22,10 @@ const Menu = (props) => {
 
     return (
 
-        <div className="w-accordion">
+        <div className="w-accordion menu-accordion">
             {
             props.contentMenu.map((child, index) => (
-                 <MenuSection id={nameGroup + index} key={nameGroup + index} allowMultipleOpen={options.allowMultipleOpen} title={child.titleSection} items= {child.items} nameGroup = {nameGroup}/>
+                 <MenuSection id={nameGroup + index} key={nameGroup + index} allowMultipleOpen={options.allowMultipleOpen} title={child.titleSection} items= {child.items} nameGroup = {nameGroup} isMenuSecond={isMenuSecond} />
             ))
             }
         </div>

@@ -20213,27 +20213,36 @@ video {
 
 /* Icon formatting - closed */
 
-.tab input[type="checkbox"] + label .icon::before {
-  /* content: "+"; */
-  font-weight: bold; /*.font-bold*/
-  border-width: 1px; /*.border*/
-  border-radius: 9999px; /*.rounded-full */
-  border-color: #b8c2cc; /*.border-grey*/
-}
+/*.tab input[type="checkbox"] + label .icon::before {*/
 
-.tab input[type="radio"] + label .icon {
+/* content: "+"; */
+
+/*font-weight: bold;*/ /*.font-bold*/
+
+/*border-width: 1px;*/ /*.border*/
+
+/*border-radius: 9999px;*/ /*.rounded-full */
+
+/*border-color: #b8c2cc;*/ /*.border-grey*/
+
+/*}*/
+
+.tab input[type="radio"] + label .icon, .tab input[type="checkbox"] + label .icon {
   transform: rotate(180deg);
 }
 
 /* Icon formatting - open */
 
-.tab input[type="checkbox"]:checked + label .icon::before {
-  transform: rotate(315deg);
-  background-color: #6574cd; /*.bg-indigo*/
-  color: #f8fafc; /*.text-grey-lightest*/
-}
+/* .tab input[type="checkbox"]:checked + label .icon::before {
+  transform: rotate(315deg); */
 
-.tab input[type="radio"]:checked + label .icon {
+/*background-color: #6574cd;*/ /*.bg-indigo*/
+
+/*color: #f8fafc;*/ /*.text-grey-lightest*/
+
+/*}*/
+
+.tab input[type="radio"]:checked + label .icon, .tab input[type="checkbox"]:checked + label .icon {
   transform: rotate(360deg);
 }
 
@@ -20254,6 +20263,49 @@ label .icon {
 }
 
 /***Para las etiquetas con fuente 12****/
+
+/****************menu accordion************************/
+
+.menu-accordion .main-menu{
+  margin-top: 1px;
+  border-radius: 0.25rem;
+  --bg-opacity: 1;
+  background-color: #00a1c6;
+  background-color: rgba(0, 161, 198, var(--bg-opacity));
+}
+
+.menu-accordion .main-menu .text-title-menu{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.menu-accordion .second-menu{
+  margin-top: 0;
+  --bg-opacity: 1;
+  background-color: #e1e2e2;
+  background-color: rgba(225, 226, 226, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #435967;
+  color: rgba(67, 89, 103, var(--text-opacity))
+}
+
+.menu-accordion .second-menu:hover{
+  --text-opacity: 1;
+  color: #00a1c6;
+  color: rgba(0, 161, 198, var(--text-opacity));
+  --bg-opacity: 1;
+  background-color: #EDEDED;
+  background-color: rgba(237, 237, 237, var(--bg-opacity));
+}
+
+.menu-accordion .second-menu .text-title-menu{
+  --text-opacity: 1;
+  color: #435967;
+  color: rgba(67, 89, 103, var(--text-opacity));
+}
+
+/****************menu accordion************************/
 
 @media (min-width: 640px) {
   .sm\:container {

@@ -5,20 +5,22 @@ import Menu from "./Menu";
 
 const MenuSection = (props) => {
 
+    const classMenuTitle = props.isMenuSecond? 'second-menu': 'main-menu'
+
     const [typeControl, setTypeControl] = useState('radio');
     useEffect(() => {
-        
         if (props.allowMultipleOpen) {
             setTypeControl('checkbox');
         }
         else {
             setTypeControl('radio');
         }
+
     }, [props.allowMultipleOpen]);
 
     return (
 
-        <div className="tab w-full overflow-hidden mt-px bg-primary rounded">
+        <div className={"tab w-full overflow-hidden "+classMenuTitle}>
             <input
                 className="absolute opacity-0"
                 id={'tab-single-menu-' + props.id}
@@ -26,7 +28,7 @@ const MenuSection = (props) => {
                 name= {props.nameGroup}
             />
             <label
-                className="block leading-normal cursor-pointer h-10 text-fs13 p-2 text-white relative" htmlFor ={'tab-single-menu-' + props.id}>
+                className="block leading-normal cursor-pointer h-10 text-fs13 p-2 relative text-title-menu" htmlFor ={'tab-single-menu-' + props.id}>
                 <span>{props.title} </span> 
                 <span className="icon icon-ic_arrow_long absolute"></span>
             </label>
@@ -35,7 +37,7 @@ const MenuSection = (props) => {
                     {
                         props.items.map((item, index) => (
                             item.isNested?
-                            <Menu allowMultipleOpen={true} contentMenu={item.itemsNested} nameGroup={props.title.replace(/\s/g,'')}></Menu>
+                            <Menu allowMultipleOpen={true} contentMenu={item.itemsNested} nameGroup={props.title.replace(/\s/g,'')} isMenuSecond={true}></Menu>
                             :
                             <Item key={'section'+index} label={item.label} enableHref={item.enableHref} enableCallback= {item.enableCallback} href= {item.href} functCallBack={item.functCallBack} ></Item>
                             
