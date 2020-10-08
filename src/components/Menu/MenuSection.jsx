@@ -37,7 +37,7 @@ const MenuSection = (props) => {
                     {
                         props.items.map((item, index) => (
                             item.isNested?
-                            <Menu allowMultipleOpen={true} contentMenu={item.itemsNested} nameGroup={props.title.replace(/\s/g,'')} isMenuSecond={true}></Menu>
+                            <Menu key={'submenu'+props.title.replace(/\s/g,'')+index} allowMultipleOpen={true} contentMenu={item.itemsNested} nameGroup={props.title.replace(/\s/g,'')} isMenuSecond={true}></Menu>
                             :
                             <Item key={'section'+index} label={item.label} enableHref={item.enableHref} enableCallback= {item.enableCallback} href= {item.href} functCallBack={item.functCallBack} ></Item>
                             
