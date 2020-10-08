@@ -20305,6 +20305,12 @@ label .icon {
   color: rgba(67, 89, 103, var(--text-opacity));
 }
 
+.tab input + label .icon-section{
+  right: 26px;
+  top: 12px;
+  font-size: 18px;
+}
+
 /****************menu accordion************************/
 
 @media (min-width: 640px) {

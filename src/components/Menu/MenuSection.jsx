@@ -15,6 +15,7 @@ const MenuSection = (props) => {
         else {
             setTypeControl('radio');
         }
+        console.log(props.items);
 
     }, [props.allowMultipleOpen]);
 
@@ -30,7 +31,20 @@ const MenuSection = (props) => {
             <label
                 className="block leading-normal cursor-pointer h-10 text-fs13 p-2 relative text-title-menu" htmlFor ={'tab-single-menu-' + props.id}>
                 <span>{props.title} </span> 
-                <span className="icon icon-ic_arrow_long absolute"></span>
+                {
+                    props.iconSection?
+                    <span className={"icon-section absolute "+ props.iconSection}></span>
+                    :
+                    <span></span>
+                }
+                {
+                    props.items.length>0?
+                    <span className="icon icon-ic_arrow_long absolute"></span>
+                    :
+                    <span></span>
+
+                }
+                
             </label>
             <div className="tab-content overflow-hidden bg-gray-100 border-indigo-500 leading-normal">
                 <ul>

@@ -76,4 +76,10 @@ label .icon {
   @apply text-secondary;
 }
 
+.tab input + label .icon-section{
+  right: 26px;
+  top: 12px;
+  font-size: 18px;
+}
+
 /****************menu accordion************************/

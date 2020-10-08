@@ -19,6 +19,7 @@ Normal.args = {
   contentMenu: [
     {
       titleSection: 'Menu 1',
+      iconSection:null, 
       items: [
         {
           label: 'Integración empresarial',
@@ -30,6 +31,7 @@ Normal.args = {
           itemsNested: [
             {
               titleSection: 'SubMenu 1',
+              iconSection:'icon-ic_update_ci', 
               items: [
                 {
                   label: 'Anidado 1',
@@ -58,6 +60,7 @@ Normal.args = {
             },
             {
               titleSection: 'SubMenu 2',
+              iconSection:'icon-ic_update_pack', 
               items: [
                 {
                   label: 'Anidado 2',
@@ -77,6 +80,35 @@ Normal.args = {
                 },
                 {
                   label: 'Anidado 2',
+                  enableHref: false,
+                  enableCallback: false,
+                  href: '',
+                  functCallBack: null
+                }
+              ]
+            },
+            {
+              titleSection: 'SubMenu 3',
+              iconSection:'icon-ic_voz_roaming', 
+              items: [
+                {
+                  label: 'Anidado 3',
+                  enableHref: false,
+                  enableCallback: true,
+                  href: '',
+                  functCallBack: function () {
+                    console.log('Anidado 3');
+                  }
+                },
+                {
+                  label: 'Anidado 3',
+                  enableHref: false,
+                  enableCallback: true,
+                  href: '',
+                  functCallBack: () => console.log('Anidado 3')
+                },
+                {
+                  label: 'Anidado 3',
                   enableHref: false,
                   enableCallback: false,
                   href: '',
@@ -182,7 +214,25 @@ Normal.args = {
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: true,
+          itemsNested: [
+            {
+              titleSection: 'SubMenu 1',
+              iconSection:'icon-ic_update_ci', 
+              items: []
+            },
+            {
+              titleSection: 'SubMenu 2',
+              iconSection:'icon-ic_update_pack', 
+              items: []
+            },
+            {
+              titleSection: 'SubMenu 3',
+              iconSection:'icon-ic_voz_roaming', 
+              items: []
+            }
+          ]
         },
         {
           label: 'Usuarios',
