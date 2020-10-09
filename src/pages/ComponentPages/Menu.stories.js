@@ -59,7 +59,7 @@ Normal.args = {
               ]
             },
             {
-              titleSection: 'SubMenu 2',
+              titleSection: 'SubMenu con nombre BASTANTE largo',
               iconSection:'icon-ic_update_pack', 
               items: [
                 {

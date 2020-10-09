@@ -60,12 +60,22 @@ label .icon {
 
 .menu-accordion .main-menu .text-title-menu{
   @apply text-white;
+  @apply h-10;
+  @apply min-h-10;
+  @apply h-auto;
+}
+.menu-accordion .main-menu .text-title-menu .have-icon-section{
+  @apply inline-block;
+  @apply w-3/4;
 }
 
 .menu-accordion .second-menu{
   @apply mt-0;
   @apply bg-zircon;
-  @apply text-secondary
+  @apply text-secondary;
+  @apply border-b;
+  @apply border-solid;
+  @apply border-nobel;
 }
 .menu-accordion .second-menu:hover{
   @apply text-primary;
@@ -74,12 +84,23 @@ label .icon {
 
 .menu-accordion .second-menu .text-title-menu{
   @apply text-secondary;
+  @apply min-h-10;
+  @apply h-auto;
+}
+menu-accordion .second-menu .text-title-menu .have-icon-section{
+  @apply inline-block;
+  @apply w-3/4;
+  
+}
+.menu-accordion .second-menu .text-title-menu:hover{
+  @apply text-primary;
 }
 
 .tab input + label .icon-section{
-  right: 26px;
-  top: 12px;
+  /** right: 26px;
+  top: 12px; **/
   font-size: 18px;
+  @apply align-middle;
 }
 
 /****************menu accordion************************/

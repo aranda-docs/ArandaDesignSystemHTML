@@ -21,7 +21,7 @@ const MenuSection = (props) => {
 
     return (
 
-        <div className={"tab w-full overflow-hidden "+classMenuTitle}>
+        <div className={"tab w-full "+classMenuTitle}>
             <input
                 className="absolute opacity-0"
                 id={'tab-single-menu-' + props.id}
@@ -29,11 +29,11 @@ const MenuSection = (props) => {
                 name= {props.nameGroup}
             />
             <label
-                className="block leading-normal cursor-pointer h-10 text-fs13 p-2 relative text-title-menu" htmlFor ={'tab-single-menu-' + props.id}>
-                <span>{props.title} </span> 
+                className="block leading-normal cursor-pointer text-fs13 p-2 relative text-title-menu" htmlFor ={'tab-single-menu-' + props.id}>
+                <span className={props.iconSection?"have-icon-section": ""}>{props.title} </span> 
                 {
                     props.iconSection?
-                    <span className={"icon-section absolute "+ props.iconSection}></span>
+                    <span className={"icon-section "+ props.iconSection}></span>
                     :
                     <span></span>
                 }
