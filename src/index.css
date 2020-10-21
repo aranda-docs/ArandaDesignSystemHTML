@@ -56,6 +56,7 @@ label .icon {
   @apply mt-px;
   @apply  rounded;
   @apply bg-primary;
+  @apply mb-3;
 }
 
 .menu-accordion .main-menu .text-title-menu{
@@ -71,7 +72,7 @@ label .icon {
 
 .menu-accordion .second-menu{
   @apply mt-0;
-  @apply bg-zircon;
+  @apply bg-palegray;
   @apply text-secondary;
   @apply border-b;
   @apply border-solid;
@@ -79,7 +80,7 @@ label .icon {
 }
 .menu-accordion .second-menu:hover{
   @apply text-primary;
-  @apply bg-palegray;
+  @apply bg-zircon;
 }
 
 .menu-accordion .second-menu .text-title-menu{

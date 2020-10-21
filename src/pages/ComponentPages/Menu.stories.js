@@ -22,7 +22,7 @@ Normal.args = {
       iconSection:null, 
       items: [
         {
-          label: 'Integración empresarial',
+          label: 'Sub menus del Menu 1',//No esnecesario
           enableHref: false,
           enableCallback: false,
           href: '',
@@ -125,41 +125,52 @@ Normal.args = {
           href: '',
           functCallBack: function () {
             console.log('Menu usuarios');
-          }
+          },
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos',
           enableHref: false,
           enableCallback: true,
           href: '',
-          functCallBack: () => console.log('Menu grupos')
+          functCallBack: () => console.log('Menu grupos'),
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos dinámicos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Actividad de consola',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Licenciamiento',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
 
       ]
     },
     {
       titleSection: 'Menu 2',
+      iconSection:null, 
       items: [
         {
           label: 'Integración empresarial',
@@ -167,50 +178,63 @@ Normal.args = {
           enableCallback: false,
           href: '?path=/story/menu--multiple-open',
           functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Usuarios',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos dinámicos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Actividad de consola',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Licenciamiento',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
 
       ]
     },
     {
       titleSection: 'Menu 3',
+      iconSection:null, 
       items: [
         {
-          label: 'Integración empresarial',
+          label: 'SubMenus en menu 3',//No es necesario label
           enableHref: false,
           enableCallback: false,
           href: '',
@@ -218,18 +242,34 @@ Normal.args = {
           isNested: true,
           itemsNested: [
             {
-              titleSection: 'SubMenu 1',
+              titleSection: 'Sin submenus 1',
               iconSection:'icon-ic_update_ci', 
+              enableHref: false,
+              enableCallback: true,
+              href: '',
+              functCallBack: function () {
+                console.log('Sin submenu 1');
+              },
               items: []
             },
             {
-              titleSection: 'SubMenu 2',
+              titleSection: 'Sin submenus 2',
               iconSection:'icon-ic_update_pack', 
+              enableHref: true,
+              enableCallback: false,
+              href: '?path=/story/menu--multiple-open',
+              functCallBack: null,
               items: []
             },
             {
-              titleSection: 'SubMenu 3',
+              titleSection: 'Sin submenus 3',
               iconSection:'icon-ic_voz_roaming', 
+              enableHref: false,
+              enableCallback: true,
+              href: '',
+              functCallBack: function () {
+                console.log('Sin submenu 3');
+              },
               items: []
             }
           ]
@@ -239,35 +279,45 @@ Normal.args = {
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos dinámicos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Actividad de consola',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Licenciamiento',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
 
       ]
@@ -284,13 +334,16 @@ MultipleOpen.args = {
   contentMenu: [
     {
       titleSection: 'Menu 1',
+      iconSection:null, 
       items: [
         {
           label: 'Integración empresarial',
           enableHref: true,
           enableCallback: false,
           href: '?path=/story/menu--normal',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Usuarios',
@@ -299,131 +352,167 @@ MultipleOpen.args = {
           href: '',
           functCallBack: function () {
             console.log('Menu usuarios');
-          }
+          },
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos',
           enableHref: false,
           enableCallback: true,
           href: '',
-          functCallBack: () => console.log('Menu grupos')
+          functCallBack: () => console.log('Menu grupos'),
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos dinámicos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Actividad de consola',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Licenciamiento',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
 
       ]
     },
     {
       titleSection: 'Menu 2',
+      iconSection:null, 
       items: [
         {
           label: 'Integración empresarial',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Usuarios',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos dinámicos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Actividad de consola',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Licenciamiento',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
 
       ]
     },
     {
       titleSection: 'Menu 3',
+      iconSection:null, 
       items: [
         {
           label: 'Integración empresarial',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Usuarios',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Grupos dinámicos',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Actividad de consola',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
         {
           label: 'Licenciamiento',
           enableHref: false,
           enableCallback: false,
           href: '',
-          functCallBack: null
+          functCallBack: null,
+          isNested: false,
+          itemsNested:[]
         },
 
       ]

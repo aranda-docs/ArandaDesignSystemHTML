@@ -20292,6 +20292,7 @@ label .icon {
   --bg-opacity: 1;
   background-color: #00a1c6;
   background-color: rgba(0, 161, 198, var(--bg-opacity));
+  margin-bottom: 0.75rem;
 }
 
 .menu-accordion .main-menu .text-title-menu{
@@ -20311,8 +20312,8 @@ label .icon {
 .menu-accordion .second-menu{
   margin-top: 0;
   --bg-opacity: 1;
-  background-color: #e1e2e2;
-  background-color: rgba(225, 226, 226, var(--bg-opacity));
+  background-color: #EDEDED;
+  background-color: rgba(237, 237, 237, var(--bg-opacity));
   --text-opacity: 1;
   color: #435967;
   color: rgba(67, 89, 103, var(--text-opacity));
@@ -20328,8 +20329,8 @@ label .icon {
   color: #00a1c6;
   color: rgba(0, 161, 198, var(--text-opacity));
   --bg-opacity: 1;
-  background-color: #EDEDED;
-  background-color: rgba(237, 237, 237, var(--bg-opacity));
+  background-color: #e1e2e2;
+  background-color: rgba(225, 226, 226, var(--bg-opacity));
 }
 
 .menu-accordion .second-menu .text-title-menu{
