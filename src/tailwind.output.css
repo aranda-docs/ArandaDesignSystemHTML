@@ -11743,6 +11743,11 @@ video {
   line-height: 18px;
 }
 
+.text-fs18 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .text-base {
   font-size: 16px;
   line-height: 24px;
@@ -20220,6 +20225,10 @@ video {
           animation: bounce 1s infinite;
 }
 
+* {
+  font-family: 'PT Sans', 'pt_sansregular', sans-serif;
+}
+
 .tab-content {
   max-height: 0;
   transition: max-height 0.35s;
@@ -20360,6 +20369,93 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
 }
 
 /****************menu accordion************************/
+
+/******************Menu Header***************************/
+
+.as-icon-header{
+  display: block !important;
+}
+
+.as-icon-header::before{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px;
+  height: 27px;
+  width: 27px;
+  padding: 5px;
+  margin: auto;
+  border-radius: 3px;
+  cursor: pointer;
+  --bg-opacity: 1;
+  background-color: #435967;
+  background-color: rgba(67, 89, 103, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.as-icon-header:hover::before{
+  --bg-opacity: 1;
+  background-color: #00a1c6;
+  background-color: rgba(0, 161, 198, var(--bg-opacity));
+}
+
+.header-zone-center-menu ul.k-menu{
+  --bg-opacity: 1;
+  background-color: #435967;
+  background-color: rgba(67, 89, 103, var(--bg-opacity));
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item{
+  padding: 0.5rem;
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item .k-link.k-menu-link{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item:hover .k-link.k-menu-link{
+  --text-opacity: 1;
+  color: #00a1c6;
+  color: rgba(0, 161, 198, var(--text-opacity));
+}
+
+.as-icon-header-submenu{
+  --bg-opacity: 1;
+  background-color: #435967;
+  background-color: rgba(67, 89, 103, var(--bg-opacity));
+}
+
+.as-icon-header-submenu:last-child .k-link.k-menu-link{
+  border-bottom: none;
+}
+
+.as-icon-header-submenu .k-link.k-menu-link{
+  font-size: 12px;
+  line-height: 17px;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  text-align: center;
+  border-bottom: solid 1px white;
+}
+
+.as-icon-header-submenu .k-link.k-menu-link:hover{
+  --bg-opacity: 1;
+  background-color: #00a1c6;
+  background-color: rgba(0, 161, 198, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+/******************Menu Header***************************/
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -31266,6 +31362,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
   .sm\:text-fs13 {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .sm\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .sm\:text-base {
@@ -50587,6 +50688,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
     line-height: 18px;
   }
 
+  .md\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
   .md\:text-base {
     font-size: 16px;
     line-height: 24px;
@@ -69906,6 +70012,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
     line-height: 18px;
   }
 
+  .lg\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
   .lg\:text-base {
     font-size: 16px;
     line-height: 24px;
@@ -89223,6 +89334,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
   .xl\:text-fs13 {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .xl\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .xl\:text-base {

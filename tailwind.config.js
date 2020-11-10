@@ -10,6 +10,7 @@ module.exports = {
       fs10: ['10px', '15px'],
       sm: ['12px', '17px'],
       fs13: ['13px', '18px'],
+      fs18: ['18px', '23px'],
       base: ['16px', '24px'],
       lg: ['20px', '28px'],
       xl: ['24px', '32px'],

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: 'PT Sans', 'pt_sansregular', sans-serif; 
+}
+
 .tab-content {
   max-height: 0;
   -webkit-transition: max-height 0.35s;
@@ -105,3 +109,72 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
 }
 
 /****************menu accordion************************/
+
+
+/******************Menu Header***************************/
+.as-icon-header{
+  display: block !important;
+}
+
+.as-icon-header::before{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px;
+  height: 27px;
+  width: 27px;
+  padding: 5px;
+  margin: auto;
+  border-radius: 3px;
+  cursor: pointer;
+  @apply bg-secondary;
+  @apply text-white;
+}
+.as-icon-header:hover::before{
+  @apply bg-primary;
+}
+
+.header-zone-center-menu ul.k-menu{
+  @apply bg-secondary;
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item{
+  @apply p-2;
+}
+
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item .k-link.k-menu-link{
+  @apply text-white;
+  @apply text-sm;
+  @apply text-center;
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item:hover .k-link.k-menu-link{
+  @apply text-primary;
+}
+
+.as-icon-header-submenu{
+  @apply bg-secondary;
+  
+
+}
+
+.as-icon-header-submenu:last-child .k-link.k-menu-link{
+  border-bottom: none;
+}
+.as-icon-header-submenu .k-link.k-menu-link{
+  @apply text-sm;
+  @apply text-white;
+  @apply text-center;
+  border-bottom: solid 1px white;
+  
+}
+
+
+.as-icon-header-submenu .k-link.k-menu-link:hover{
+  @apply bg-primary;
+  @apply text-white;
+}
+
+
+/******************Menu Header***************************/
