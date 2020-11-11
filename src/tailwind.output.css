@@ -20515,14 +20515,14 @@ header.main .base .logo .wrap-mid {
 }
 
 header.main .base .logo h2.regular {
-  font-family: 'Lato';
+  /* font-family: 'Lato'; */
   font-size: 20px;
   font-weight: 400;
   margin-top: 3px;
 }
 
 header.main .base .logo h2.bold {
-  font-family: 'Lato';
+  /* font-family: 'Lato'; */
   font-size: 20px;
   font-weight: 700;
 }

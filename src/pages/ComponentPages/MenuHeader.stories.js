@@ -12,12 +12,12 @@ export default {
 
   const Template = (args) => <MenuHeader {...args} />;
 
-export const Normal = Template.bind({});
-Normal.args = {
+export const ADM = Template.bind({});
+ADM.args = {
   allowMultipleOpen: false,
 };
 
-export const MultipleOpen = Template.bind({});
-MultipleOpen.args = {
+export const AEMM = Template.bind({});
+AEMM.args = {
   allowMultipleOpen: true,
 };

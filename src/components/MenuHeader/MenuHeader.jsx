@@ -8,7 +8,8 @@ import '@progress/kendo-theme-default/dist/all.css';
 const items = [
     {
         text: 'Dashboard',
-        cssClass: 'as-icon-header icon-ic_dashboard'
+        cssClass: 'as-icon-header icon-ic_dashboard',
+        url: '?path=/story/menu--multiple-open'
     },
     {
         text: 'Inventario',
@@ -66,7 +67,8 @@ const items = [
     },
     {
         text: 'Políticas',
-        cssClass: 'as-icon-header icon-ic_policy'
+        cssClass: 'as-icon-header icon-ic_policy',
+        select: ()=>console.log('Hola desde menu')
     },
     {
         text: 'Reglas',
@@ -100,9 +102,9 @@ const MenuHeader = (props) => {
                     </div>
                 </div>
                 <div className="header-zone-center">
-                    <div class="arrow-right"></div>
-                    <div class="breadcrumbs">
-                        <span class="title headerTx">Dispositivos</span>
+                    <div className="arrow-right"></div>
+                    <div className="breadcrumbs">
+                        <span className="title headerTx">Dispositivos</span>
                     </div>
                     <div className="header-zone-center-menu">
                         <Menu items={items} />
