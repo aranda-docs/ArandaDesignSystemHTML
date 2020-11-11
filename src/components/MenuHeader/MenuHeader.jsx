@@ -38,7 +38,17 @@ const items = [
             },
             {
                 text: 'Distribución',
-                cssClass: 'as-icon-header-submenu'
+                cssClass: 'as-icon-header-submenu',
+                items: [
+                    {
+                        text: 'Dispositivos',
+                        cssClass: 'as-icon-header-submenu'
+                    },
+                    {
+                        text: 'Hardware',
+                        cssClass: 'as-icon-header-submenu'
+                    }
+                ]
             },
             {
                 text: 'Licencias',
@@ -78,9 +88,55 @@ const items = [
 const MenuHeader = (props) => {
 
     return (
-        <div className ="header-zone-center-menu">
-            <Menu items={items} />
-        </div>
+        <header className="main headerBg adm">
+            <div className="base">
+                <div className="logo">
+                    <div className="icon">
+                        <span className="icon-ic_logo_ADM"></span>
+                    </div>
+                    <div className="wrap-mid">
+                        <h2 className="regular">Aranda</h2>
+                        <h2 className="bold">Device Management</h2>
+                    </div>
+                </div>
+                <div className="header-zone-center">
+                    <div class="arrow-right"></div>
+                    <div class="breadcrumbs">
+                        <span class="title headerTx">Dispositivos</span>
+                    </div>
+                    <div className="header-zone-center-menu">
+                        <Menu items={items} />
+                    </div>
+                </div>
+                <div className="rightMenu">
+                    <div className="col2">
+                        <div className="exit">
+                            <a className="textTitle" href="../Handlers/Logout.ashx">
+                                <span id="spnCloseSession" className="titleRightMenu mainTx">| Cerrar sesión</span>
+                            </a>
+                        </div>
+                        <div className="configuration" >
+                            <a href="Settings.aspx#" className="headerTx">Configuración</a>
+                            <div className="icon">
+                                <span className="icon-font icon-ic_gear headerTx"></span>
+                            </div>
+                        </div>
+                        <div className="home" style={{display: 'none'}}>
+                            <a href="Default.aspx#" className="headerTx">Inicio</a>
+                            <div className="icon">
+                                <span className="icon-font icon-ic_gear headerTx"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="block">
+                        <div className="positionTop">
+                            <a className="userTop headerTx ellipsis" href="Default.aspx#/profile/user" title="APPLICATION ADMINISTRATOR">APPLICATION ADMINISTRATOR</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </header>
     );
 
 };
