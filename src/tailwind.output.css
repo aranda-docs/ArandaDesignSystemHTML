@@ -20410,6 +20410,7 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   padding-bottom: 0;
+  max-width: 88px;
 }
 
 .header-zone-center-menu ul.k-menu .k-item.k-menu-item .k-link.k-menu-link{
