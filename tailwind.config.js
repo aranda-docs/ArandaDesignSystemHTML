@@ -56,8 +56,15 @@ module.exports = {
       'statusEnrolled': '#9CC13B',
       'statusPending': '#F4AE1C',
       'statusUnenrolled': '#AFAEB4',
+      'nobel': '#999999',
       
     }),
+
+    minHeight:theme => ( {
+      '0': '0',
+      '10': '2.5rem',
+      
+        }),
 
     textColor: theme => ({
       ...theme('colors'),
