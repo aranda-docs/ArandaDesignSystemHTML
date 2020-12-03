@@ -2,62 +2,57 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
 const Button = (props) => {
-  const [options, setOptions] = useState({
-    type: "bg",
-    color: "primary",
-    text: "",
-    disabled: false,
-  });
-
-  useEffect(() => {
-    if (props) {
-      setOptions(props);
-    }
-  }, [props, setOptions]);
-
-  if (options.disabled === true) {
+  const {
+    backcolor,
+    color,
+    text,
+    size,
+    disabled,
+    onClick,
+    name,
+    id,
+    bordercolor
+  }=props;
+  if (disabled === true) {
     return (
       <button
         disabled
-        className={`m-4 text-sm bg-disable text-white rounded-sm p-2`}
+        id={id}
+        name={name}
+        onClick={onClick}
+        className={`m-4 text-sm border bg-disable ${size}  padbutton text-white rounded-md p-2 border-${bordercolor}`}
       >
-        {options.text}
-      </button>
-    );
-  }
-  if (options.text === "red") {
-    return (
-      <button
-        background="red"
-        className={`m-4 text-sm bg-disable text-white rounded-sm p-2`}
-      >
-        {options.text}
-      </button>
-    );
-  }
-  if (options.type === "border") {
-    return (
-      <button
-        className={`m-4 text-sm border-solid border text-${options.color} rounded-sm p-2 hover:opacity-50 ${options.type}-${options.color}`}
-      >
-        {options.text}
+        {text}
       </button>
     );
   }
   return (
     <button
-      className={`m-4 text-sm text-white rounded-sm p-2 hover:bg-opacity-50  ${options.type}-${options.color}`}
+    id={id}
+    name={name}
+    onClick={onClick}
+      className={`m-4 text-sm border text-white ${size} ${backcolor} padbutton rounded-md p-2 hover:bg-opacity-50  border-${bordercolor}`}
+      style={color&&{color}}
     >
-      {options.text}
+      {text}
     </button>
   );
 };
-
 Button.propTypes = {
-  type: PropTypes.string,
+  backcolor: PropTypes.oneOf(['bg-primary', 'bg-secundary', 'bg-danger','bg-disable','bg-transparent']),
   color: PropTypes.string,
   text: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
+  name: PropTypes.string,
+  id: PropTypes.string,
+  size:PropTypes.string,
+  onClick:PropTypes.func
 };
+Button.defaultProps = {
+  backcolor:"bg-primary",
+  text: 'Button',
+  disabled: false,
+  size:'w-md'
 
+};
 export default Button;

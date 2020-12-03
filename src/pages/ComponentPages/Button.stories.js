@@ -3,13 +3,12 @@ import React from "react";
 import Button from "../../components/Button";
 
 export default {
-  title: "Botones",
+  title: "Example/Botones",
   component: Button,
   argTypes: {
     text: { control: "text", type: { name: "string", required: true } },
-    type: { control: "text" },
-    color: { control: "text" },
     disabled: { control: "boolean" },
+    color:{control:'color'}
   },
 };
 
@@ -17,24 +16,25 @@ const Template = (args) => <Button {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
-  type: "bg",
-  color: "primary",
+  backcolor: "bg-primary",
   text: "Normal",
+  onClick:hola()
 };
 
 export const Border = Template.bind({});
 Border.args = {
-  type: "border",
-  color: "primary",
+  backcolor: "bg-transparent",
+  color:"blue",
   text: "Border",
+  onClick:hola()
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
   text: "Disabled Button",
+  onClick:hola()
 };
-export const red = Template.bind({});
-red.args = {
-  text: "red",
-};
+function hola(){
+  alert("hola");
+}

@@ -1,33 +1,32 @@
-import React from "react";
-import Textarea from "../../components/Textarea";
+import React from 'react';
+import Textarea from '../../components/Textarea';
 export default {
-    title: "TextArea",
+    title: 'Example/TextArea',
     component: Textarea,
     argTypes: {
-        text: { control: "text", type: { name: "string", required: true } },
-        type: { control: "text" },
-        color: { control: "text" },
-        disabled: { control: "boolean" },
-        font: { control: "text" },
-        maxLength: { control: "text" },
-        rows={ control: "text" },
-        cols: { control: "text" },
-        placeholder: { control: "text" },
-        specialCharacters: { control: "boolean" },
-        hover: { control: "text" }
+        text: { control: 'text'},
+        disabled:{ control:'boolean'},
+        cols:{cotrol:'number'},
+        rows:{cotrol:'number'},
+        maxlength:{cotrol:'number'},
+        placeholder:{control:'text'}
     },
 };
 
-const Templatea = (args) => <Textarea {...args} />;
-export const Normala = Templatea.bind({});
-Normala.args = {
-    type: "bg",
-    color: "primary",
-    text: "Normal",
+const Template = (args) => <Textarea {...args} />;
+export const Normal = Template.bind({});
+Normal.args = {
+    text: 'Normal',
+    disabled: false,
 };
 
-export const Disableda = Templatea.bind({});
-Disableda.args = {
+export const Disabled = Template.bind({});
+Disabled.args = {
     disabled: true,
-    text: "Disabled TextArea",
+    text: 'Disabled TextArea'
+};
+export const Placeholder = Template.bind({});
+Placeholder.args = {
+    text: '',
+    disabled: false,
 };

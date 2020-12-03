@@ -43,7 +43,8 @@ module.exports = {
       'severityhigh': '#f00',
       'severitymedium': '#FDBA42',
       'severitylow': '#FFF42D',
-      'pattensBlue': '#D0D6D9'
+      'pattensBlue': '#D0D6D9',
+      'gray':'#ccc'
     }),
 
     borderColor: theme => ({
