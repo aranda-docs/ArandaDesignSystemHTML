@@ -11743,6 +11743,11 @@ video {
   line-height: 18px;
 }
 
+.text-fs18 {
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .text-base {
   font-size: 16px;
   line-height: 24px;
@@ -20220,6 +20225,10 @@ video {
           animation: bounce 1s infinite;
 }
 
+* {
+  font-family: 'PT Sans', 'pt_sansregular', sans-serif;
+}
+
 .tab-content {
   max-height: 0;
   transition: max-height 0.35s;
@@ -20360,6 +20369,306 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
 }
 
 /****************menu accordion************************/
+
+/******************Menu Header***************************/
+
+.as-icon-header{
+  display: block !important;
+}
+
+.as-icon-header::before{
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px;
+  height: 27px;
+  width: 27px;
+  padding: 5px;
+  margin: auto;
+  border-radius: 3px;
+  cursor: pointer;
+  --bg-opacity: 1;
+  background-color: #435967;
+  background-color: rgba(67, 89, 103, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.as-icon-header:hover::before{
+  --bg-opacity: 1;
+  background-color: #00a1c6;
+  background-color: rgba(0, 161, 198, var(--bg-opacity));
+}
+
+.header-zone-center-menu ul.k-menu{
+  /* @apply bg-secondary; */
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item{
+  padding-top: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-bottom: 0;
+  max-width: 88px;
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item .k-link.k-menu-link{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  font-size: 12px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.header-zone-center-menu ul.k-menu .k-item.k-menu-item:hover .k-link.k-menu-link{
+  --text-opacity: 1;
+  color: #00a1c6;
+  color: rgba(0, 161, 198, var(--text-opacity));
+}
+
+.as-icon-header-submenu{
+  --bg-opacity: 1;
+  background-color: #435967;
+  background-color: rgba(67, 89, 103, var(--bg-opacity));
+}
+
+.as-icon-header-submenu:last-child .k-link.k-menu-link{
+  border-bottom: none;
+}
+
+.as-icon-header-submenu .k-link.k-menu-link{
+  font-size: 12px;
+  line-height: 17px;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  text-align: center;
+  border-bottom: solid 1px white;
+}
+
+.as-icon-header-submenu .k-link.k-menu-link:hover{
+  --bg-opacity: 1;
+  background-color: #00a1c6;
+  background-color: rgba(0, 161, 198, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+li.as-icon-header-submenu.k-item > .k-state-active{
+  --bg-opacity: 1;
+  background-color: #00a1c6;
+  background-color: rgba(0, 161, 198, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+header.main {
+  display: block;
+  height: 80px;
+  min-width: 1280px;
+  width: 100%;
+  box-shadow: 0 4px 10px #e0e0e0;
+}
+
+.headerBg.adm{
+  --bg-opacity: 1;
+  background-color: #435967;
+  background-color: rgba(67, 89, 103, var(--bg-opacity));
+}
+
+header.main .base {
+  width: 100%;
+  height: 100%;
+}
+
+header.main .base .logo {
+  cursor: pointer;
+  display: inline-block;
+  height: 70px;
+  left: 14px;
+  margin-bottom: 3px;
+  margin-top: 6px;
+  position: absolute;
+  width: 270px;
+}
+
+header.main .base .logo .icon {
+  float: left;
+  margin: 10px 10px 0 0;
+}
+
+header.main .base .logo .icon span {
+  --text-opacity: 1;
+  color: #00a1c6;
+  color: rgba(0, 161, 198, var(--text-opacity));
+  font-size: 50px;
+  vertical-align: text-top;
+}
+
+header.main .base .logo .wrap-mid {
+  float: left;
+  margin: 10px 0 0;
+  width: calc(100% - 71px);
+}
+
+header.main .base .logo h2.regular {
+  /* font-family: 'Lato'; */
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 3px;
+}
+
+header.main .base .logo h2.bold {
+  /* font-family: 'Lato'; */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+header.main .base .logo h2 {
+  color: #fff;
+  line-height: 20px;
+  margin: 0;
+}
+
+header.main .base .header-zone-center {
+  background: rgba(0,0,0,.1);
+  color: #fff;
+  display: inline-block;
+  height: 54px;
+  margin-bottom: 13px;
+  margin-left: 300px;
+  margin-top: 13px;
+  width: calc(100% - 520px);
+}
+
+header.main .base .arrow-right {
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid;
+  border-left-color: rgba(255,255,255,.05);
+  margin-top: 17px;
+  position: absolute;
+}
+
+header.main .base .breadcrumbs {
+  box-sizing: border-box;
+  color: #fff;
+  display: table-cell;
+  float: left;
+  height: 54px;
+  line-height: 160%;
+  margin-left: 15px;
+  max-width: 120px;
+  padding-left: 4px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+}
+
+header.main .base .breadcrumbs .title {
+  display: table-cell;
+  font-size: 16px;
+  height: 54px;
+  vertical-align: middle;
+}
+
+.headerTx{
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.header-zone-center-menu{
+  float: right;
+}
+
+header.main .base .rightMenu {
+  float: right;
+  height: 57px;
+  /* position: absolute; */
+  right: 10px;
+  text-align: right;
+  top: 10px;
+  width: 215px;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+header.main .base .rightMenu>.col2 {
+  clear: both;
+  height: 30px;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 215px;
+}
+
+header.main .base .rightMenu .exit {
+  color: #fff;
+  float: right;
+  font-size: 13px;
+  line-height: 20px;
+  width: auto;
+}
+
+header.main .base .rightMenu .exit a {
+  color: #00a1c6;
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.mainTx {
+  color: #00a1c6;
+}
+
+.block {
+  display: block;
+}
+
+header.main .base .rightMenu .configuration, header.main .base .rightMenu .home {
+  float: right;
+  margin: 0;
+  width: auto;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+header.main .base .rightMenu .configuration a, header.main .base .rightMenu .home a {
+  font-size: 13px;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+header.main .base .rightMenu .configuration .icon, header.main .base .rightMenu .home .icon {
+  display: inline-block;
+  height: 16px;
+  margin: -6px 2px 0 -1px;
+  padding: 2px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 18px;
+}
+
+header.main .base .rightMenu .positionTop {
+  color: #999;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.userTop {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 20px;
+  max-width: calc(100% - 20px);
+  text-decoration: none;
+}
+
+/******************Menu Header***************************/
 
 @media (min-width: 640px) {
   .sm\:container {
@@ -31266,6 +31575,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
   .sm\:text-fs13 {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .sm\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .sm\:text-base {
@@ -50587,6 +50901,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
     line-height: 18px;
   }
 
+  .md\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
   .md\:text-base {
     font-size: 16px;
     line-height: 24px;
@@ -69906,6 +70225,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
     line-height: 18px;
   }
 
+  .lg\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
   .lg\:text-base {
     font-size: 16px;
     line-height: 24px;
@@ -89223,6 +89547,11 @@ menu-accordion .second-menu .text-title-menu .have-icon-section{
   .xl\:text-fs13 {
     font-size: 13px;
     line-height: 18px;
+  }
+
+  .xl\:text-fs18 {
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .xl\:text-base {
