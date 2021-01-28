@@ -52,8 +52,9 @@ Password.args = {
 export const Date = Template.bind({});
 Date.args = {
     type:'date',
-    text: '',
+    text: '2021-01-21',
     disabled: false,
+    minvalue:'2021-01-21'
 };
 export const Disabled = Template.bind({});
 Disabled.args = {

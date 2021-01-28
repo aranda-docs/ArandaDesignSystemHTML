@@ -18,7 +18,7 @@ export const Normal = Template.bind({});
 Normal.args = {
   backcolor: "bg-primary",
   text: "Normal",
-  onClick:hola()
+  onClicked:hola()
 };
 
 export const Border = Template.bind({});
@@ -26,14 +26,14 @@ Border.args = {
   backcolor: "bg-transparent",
   color:"blue",
   text: "Border",
-  onClick:hola()
+  onClicked:hola()
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   disabled: true,
   text: "Disabled Button",
-  onClick:hola()
+  onClicked:hola()
 };
 function hola(){
   alert("hola");

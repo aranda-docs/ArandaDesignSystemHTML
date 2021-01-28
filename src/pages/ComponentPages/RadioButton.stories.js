@@ -1,10 +1,10 @@
 import React from "react";
 
-import CheckList from "../../components/CheckList";
+import RadioButton from "../../components/RadioButton";
 
 export default {
-  title: "Example/CheckList",
-  component: CheckList,
+  title: "Example/RadioButton",
+  component: RadioButton,
   argTypes: {
     text: { control: "text", type: { name: "string", required: true } },
     disabled: { control: "boolean" },
@@ -17,27 +17,27 @@ export default {
   },
 };
 
-const Template = (args) => <CheckList {...args} />;
+const Template = (args) => <RadioButton {...args} />;
 
 export const Checked = Template.bind({});
 Checked.args = {
     isChecked:true,
     alingtext:'left',
     text:'entrada',
-    idCheck:'checkA'
+    idCheck:'radioA'
 };
 export const UnChecked = Template.bind({});
 UnChecked.args = {
     isChecked:false,
     alingtext:'right',
     text:'entrada',
-    idCheck:'checkB'
+    idCheck:'radioB'
 };
 export const Disabled = Template.bind({});
 Disabled.args = {
     disabled:true,
     text:'entrada',
-    idCheck:'checkC'
+    idCheck:'radioC'
 };
 
 

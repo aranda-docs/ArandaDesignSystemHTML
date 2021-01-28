@@ -1,18 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const CheckList = (props) => {
+const RadioButton = (props) => {
     const {
         text,
         isChecked,
         disabled,
         color,
         backgroundColor,
-        borderColor,
         idCheck,
-        onChage,
-        alingtext
+        alingtext,
     } = props;
+
     if (disabled === true) {
         return (
             <label
@@ -20,32 +19,27 @@ const CheckList = (props) => {
             >
                 <input
                     disabled
-                    type='checkbox'
+                    type='radio'
                     defaultChecked={isChecked}
-                    className={`ascheckbox bg-disabled`}
                     id={idCheck}
-                    onClick={onChage}
                 />
                 {text}
             </label>
-        );
+        )
     }
-    if (alingtext === 'right') {
+    if (alingtext == 'right') {
         return (
             <label
                 style={color && { color }}
             >
                 <input
-                    type='checkbox'
-                    defaultChecked={isChecked}
-                    className={`ascheckbox`}
-                    style={backgroundColor && { backgroundColor }}
+                    type='radio'
+                    defaultChecked={isChecked}                  
                     id={idCheck}
-                    onClick={onChage}
                 />
                 {text}
             </label>
-        );
+        )
     } else {
         return (
             <label
@@ -53,18 +47,17 @@ const CheckList = (props) => {
             >
                 {text}
                 <input
-                    type='checkbox'
+                    type='radio'
                     defaultChecked={isChecked}
-                    className={`ascheckbox`}
                     style={backgroundColor && { backgroundColor }}
                     id={idCheck}
-                    onClick={onChage}
                 />
             </label>
-        );
+        )
     }
+
 };
-CheckList.propTypes = {
+RadioButton.propTypes = {
     isChecked: PropTypes.bool,
     text: PropTypes.string,
     color: PropTypes.string,
@@ -74,11 +67,11 @@ CheckList.propTypes = {
     alingtext: PropTypes.string,
     idCheck:PropTypes.string.isRequired
 };
-CheckList.defaultProps = {
+RadioButton.defaultProps = {
     isChecked: true,
     disabled: false,
     text: "check1",
     color: "#999999",
     alingtext: 'left'
 };
-export default CheckList;
+export default RadioButton;

@@ -1,19 +1,17 @@
 import React from 'react';
-import Tab from '../../components/Tabs';
+import DynamicComponent from '../../components/DynamicComponent';
 export default {
-    title: 'Example/Tabs',
-    component: Tab,
+    title: 'Example/DynamicComponent',
+    component: DynamicComponent,
     argTypes: {
-        listTabs: { control: 'array'},
-        disabled:{ control:'boolean'},
-        color:{control:'color'},
+        params:{ control: 'array'},
     },
 };
 
-const Template = (args) => <Tab {...args} />;
-export const Normal = Template.bind({});
-Normal.args = {
-    listTabs: [{'title':'Title1','index':0,'id':'tab1','components':[{'componente':'dynamicComponent','params':[
+const Template = (args) => <DynamicComponent {...args} />;
+export const DynamicComp = Template.bind({});
+DynamicComp.args = {
+    params:[
         {
         "Labelposition": 1,
         "colsRequire": 1,
@@ -70,7 +68,7 @@ Normal.args = {
         "dataType": "select",
         "idGroup": "principal",
         "label": "Authentication mode",
-        "options": [{ 'value': 1, 'text': 'Anonymous' }, { 'value': 2, 'text': 'Basic' }, { 'value': 3, 'text': 'Negotiate' }],
+        "options": ['Hola1','Hola2'],
         "orderTab": 5,
         "sett_key": "authtype",
         "value": 2,
@@ -106,10 +104,10 @@ Normal.args = {
         "dataType": "select",
         "idGroup": "principal",
         "label": "User Format",
-        "options": [{ 'value': '1', 'text': 'UserNameOnly' }, { 'value': '2', 'text': 'FullQualifiedDomainName' }, { 'value': '3', 'text': 'UserPrincipalName' }],
+        "options": ['Hola1','Hola2'],
         "orderTab": 8,
         "sett_key": "userNameFormat",
-        "value": 2,
+        "value": 0,
         "holder": "escriba su nombre",
         "maxlength": 50
         },{
@@ -160,49 +158,46 @@ Normal.args = {
         "value": "Update AFLS base path.",
         "holder": "escriba su nombre",
         "maxlength": 50
-        }]}]},{'title':'Tab2','index':1,'id':'tab2','components':[{'componente':'checkerList','params':[{
-            "Labelposition": 2,
-            "label": 'Lu',
-            "sett_key": "ldapMonday",
-            "value": false
-        },
-        {
-            "Labelposition": 2,
-            "label": 'Ma',
-            "sett_key": "ldapTuesday",
-            "value": false
-        }, {
-            "Labelposition": 2,
-            "label": 'Mi',
-            "sett_key": "ldapWednesday",
-            "value": false
-        }, {
-            "Labelposition": 2,
-            "label": 'Ju',
-            "sett_key": "ldapThursday",
-            "value": false
-        }, {
-            "Labelposition": 2,
-            "label": 'Vi',
-            "sett_key": "ldapFriday",
-            "value": false
-        }, {
-            "Labelposition": 2,
-            "label": 'Sa',
-            "sett_key": "ldapSaturday",
-            "value": false
-        }, {
-            "Labelposition": 2,
-            "label": 'Do',
-            "sett_key": "ldapSunday",
-            "value": false
-        },
-        {
-            "Labelposition": 2,
-            "label": 'Todos los dias',
-            "sett_key": "ldapEveryDay",
-            "value": true
-        }]}]}],
-    disabled: false,
-    classStyle:'AFLS'
+        }]
+    /* params:
+    [{
+        "Labelposition": 1,
+        "colsRequire": 1,
+        "dataType": "text",
+        "idGroup": "principal",
+        "label": "Nombre",
+        "labelDescription": 'Esta es la descripcion del nombre',
+        "options": {},
+        "orderTab": 1,
+        "sett_key": "name",
+        "value": "Elkin salamanca",
+        "holder": "escriba su nombre",
+        "maxlength": 50
+    }, {
+        "Labelposition": 1,
+        "colsRequire": 2,
+        "dataType": "text",
+        "idGroup": "principal",
+        "label": "Domain",
+        "labelDescription": null,
+        "options": {},
+        "orderTab": 2,
+        "sett_key": "name",
+        "value": "INTERSEQ",
+        "holder": "Dominio",
+        "maxlength": 20
+    }, {
+        "Labelposition": 1,
+        "colsRequire": 2,
+        "dataType": "text",
+        "idGroup": "principal",
+        "label": "Ip de host",
+        "labelDescription": null,
+        "options": {},
+        "orderTab": 3,
+        "sett_key": "name",
+        "value": "192.168.0.1",
+        "holder": "IP",
+        "maxlength": 20
+    }] */
 };
